@@ -1,0 +1,60 @@
+.columnAction {
+    width: var(--mantine-font-size-md);
+    cursor: pointer;
+    user-select: none;
+
+    @include dark {
+        color: var(--mantine-color-dark-5);
+
+        &.active {
+            color: var(--mantine-primary-color-4);
+        }
+
+        &.activeTop :first-child {
+            fill: var(--mantine-primary-color-4);
+        }
+
+        &.activeBottom :nth-child(2) {
+            fill: var(--mantine-primary-color-4);
+        }
+
+    }
+
+    @include light {
+        color: var(--mantine-color-gray-3);
+
+        &.active {
+            color: var(--mantine-primary-color-filled);
+        }
+
+        &.activeTop :first-child {
+            fill: var(--mantine-primary-color-filled);
+        }
+
+        &.activeBottom :nth-child(2) {
+            fill: var(--mantine-primary-color-filled);
+        }
+    }
+
+}
+
+.filterPopoverContent {
+    padding: var(--mantine-spacing-xxs);
+    @include light {
+        background-color: var(--mantine-color-gray-1);
+    }
+
+    @include dark {
+        background-color: var(--mantine-color-dark-8);
+    }
+}
+
+.headerContent {
+    display: flex;
+    align-items: center;
+    gap: var(--mantine-spacing-xxs);
+}
+
+.emptyTable{
+    
+}
